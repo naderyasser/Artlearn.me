@@ -1,0 +1,1005 @@
+@font-face {
+  font-family:own;
+  src: url("../lib/webfonts/CenturyGothicBold.ttf");
+}
+@font-face {
+  font-family:ownReg;
+  src: url("../lib/webfonts/Century-Gothic-reg.ttf");
+}
+body {
+
+    --color:#a5ce39;
+    --color-1:#f4f9f9;
+    font-family: 'Tajawal', sans-serif;
+
+}
+/*  start global */
+
+
+
+
+
+
+
+
+
+ul {
+  margin:0;
+  padding:0;
+}
+.go-top {
+  bottom:20px;
+  right:20px;
+  background-color:#7fa90e;
+  color:#fff;
+  display:none;
+  z-index:50
+}
+header.head-sec {
+  margin-bottom:50px;
+}
+header.head-sec > div {
+  line-height:1.5rem;
+  padding-right:15px;
+}
+header.head-sec > div:before {
+  content:"";
+  right:0;
+  height:80%;
+  top:10%;
+  border-right:5px solid var(--color);
+  position:absolute;
+}
+header.head-sec > div p {
+  color:#c1bbbb;
+}
+.btn-sec {
+  margin:50px 0;
+  text-align:center;
+}
+.btn-sec a.btn {
+  width: auto;
+  padding:10px 5px;
+  font-size:24px;
+  font-weight:bold;
+  text-align:center;
+ color:rgb(255, 255, 255);
+  background-color:var(--color);
+  -webkit-transition:all 0.3s ease;
+  -moz-transition:all 0.3s ease;
+    transition:all 0.3s ease;
+    border:1px solid var(--color);
+}
+
+
+
+.btn-sec a.btn:hover {
+  background-color:transparent;
+  color:var(--color);
+}
+.btn-sec  p{
+  margin:0;
+  color:#c1bbbb;
+  font-size:18px;
+  margin-top:0.2rem
+}
+
+@media(max-width:600px) {
+  .btn-sec a.btn {
+    font-size:22px;
+  }
+}
+
+
+.btn-c{ margin:50px 0;
+  text-align:center;}
+.btn-c a.btn {
+  width: auto;
+  padding:10px 5px;
+  font-size:24px;
+  font-weight:bold;
+  text-align:center;
+  color:rgb(255, 255, 255);
+  background-color:#0C4CA2;
+  -webkit-transition:all 0.3s ease;
+  -moz-transition:all 0.3s ease;
+    transition:all 0.3s ease;
+    border:1px solid #0C4CA2;
+}
+
+.btn-c a.btn:hover {
+  background-color:transparent;
+  color:#0C4CA2;
+}
+.btn-sec  p{
+  margin:0;
+  color:#c1bbbb;
+  font-size:18px;
+  margin-top:0.2rem
+}
+@media(max-width:600px) {
+  .btn-c a.btn {
+    font-size:22px;
+  }
+}
+
+/* End global */
+.loading {
+  right:0;
+  top:0;
+  width:100%;
+  height:100vh;
+  background-color:#000;
+  z-index:100000;
+
+}
+.loading .wrapper {
+  height:100%
+}
+
+.loader {
+  color: #ffffff;
+  font-size: 90px;
+  text-indent: -9999em;
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin: 72px auto;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+  animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+}
+@-webkit-keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+@keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+@-webkit-keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes textAnimation
+{
+  0%
+  {
+    color:#0D47A1;
+  }
+  100%
+  {
+    color:#1A237E;
+  }
+}
+
+@keyframes rotator1
+{
+  0%
+  {
+    transform:rotate(0deg);
+  }
+  20%
+  {
+    transform:rotate(180deg);
+  }
+  100%
+  {
+    transform:rotate(360deg);
+  }
+}
+@keyframes rotator2
+{
+  0%
+  {
+    transform:rotate(0deg);
+  }
+  30%
+  {
+    transform:rotate(180deg);
+  }
+  100%
+  {
+    transform:rotate(360deg);
+  }
+}
+@keyframes rotator3
+{
+  0%
+  {
+    transform:rotate(0deg);
+  }
+  40%
+  {
+    transform:rotate(180deg);
+  }
+  100%
+  {
+    transform:rotate(360deg);
+  }
+}
+@keyframes rotator4
+{
+  0%
+  {
+    transform:rotate(0deg);
+  }
+  50%
+  {
+    transform:rotate(180deg);
+  }
+  100%
+  {
+    transform:rotate(360deg);
+  }
+}
+
+                            /****************************************************************************
+                            *********************************Start Header *******************************
+                            *****************************************************************************/
+
+
+#header   nav  {
+  padding:0 1rem;
+  width:100%;
+  right:0;
+  top:0;
+  z-index:10000;
+  border-bottom:1px solid var(--color)
+}
+#header   nav .nav-item .nav-link {
+  padding:.6rem 0.7rem;
+  color:#867f7f;
+  -webkit-transition:all 0.3s ease;
+  -moz-transition:all 0.3s ease;
+  transition:all 0.3s ease;
+  font-size:14px
+} 
+#header   nav img {
+  width:200px;
+}
+#header   nav .nav-item .nav-link:hover {
+  background-color:var(--color);
+  color:#fff;
+}
+#header .layer {
+  background:url("../images/header/header.jpg") no-repeat center / cover;
+  height:740px;
+  margin-top:70px;
+  background-position-y: 0px;
+  padding: 40px;
+  background-clip: padding-box;
+}
+#header .layer .lay {
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background: rgb(0, 0, 0);
+  background:linear-gradient(90deg, rgba(0, 0, 0, 0.58) 22%, rgba(8, 8, 8, 0.5) 35%, rgba(36,37,37,0.5940515854779411) 126%);
+}
+#header .layer .lay .wrapper {
+  height:100%;
+  padding-top:200px;
+}
+#header .layer .lay .wrapper > div {
+  line-height:0.5rem
+}
+#header .layer .lay .wrapper h1.title {
+  font-size:100px;
+  font-family:own;
+}
+#header .layer .lay .wrapper p {
+    font-size:34px;
+    word-spacing:8px;
+    font-family:ownReg;
+}
+@media(max-width:600px) {
+  #header .layer .lay .wrapper h1.title {
+    font-size:69px;
+  }
+  #header .layer .lay .wrapper p {
+    font-size: 23px;
+  }
+  #header .layer  {
+    height:100vh;
+  }
+}
+
+
+                            /****************************************************************************
+                            *********************************Start Tool box  *******************************
+                            *****************************************************************************/
+
+
+#services   {
+  top: -50px;
+  z-index:2;
+
+}
+#services  .services-wrapper {
+  padding:40px;
+  z-index:2;
+
+}
+#services  .services-wrapper .services-item img {
+  width:90px;
+}
+#services  .services-wrapper .services-item h4 {
+  font-size: 19px;
+  margin-bottom:4px;
+}
+#services  .services-wrapper .services-item p{
+  color:#c1bbbb;
+  margin:0;
+}
+                           /****************************************************************************
+                            *********************************Start banner   *******************************
+                            *****************************************************************************/
+#banner {
+  margin-top:50px;
+}
+
+#banner p {
+  font-size:28px;
+  color:#777;
+  line-height:3rem;
+}
+#banner video {
+  width:100%;
+}
+
+@media(max-width:991px) {
+  #banner {
+    margin-top:0;
+  }
+}
+@media(max-width:650px) {
+  #banner p  {
+    font-size:19px;
+  }
+}
+
+
+
+
+                    /****************************************************************************
+                    *********************************Start Box  *******************************
+                    *****************************************************************************/
+
+#box-tools  {
+  margin-top:100px;
+}
+#box-tools #box-slide {
+  width:60%;
+  position:static;
+
+}
+
+#box-tools #box-slide  .carousel-indicators  {
+  width:40%;
+  left:0;
+  right:auto;
+  margin:0!important;
+  flex-wrap:wrap;
+ justify-content: flex-start;
+ height:460px
+}
+#box-tools #box-slide  .carousel-indicators  li {
+  width:30%;
+  height:103px;
+  background-clip:unset;
+  padding:0!important;
+  border:1px solid #ddd;
+  margin-bottom:10px;
+  position:relative;
+}
+#box-tools #box-slide  .carousel-indicators  li.move {
+  left:-20px
+}
+.carousel-inner {
+  height:460px;
+}
+#box-tools #box-slide .carousel-item {
+  position:relative;
+  height:390px;
+  background-size:cover!important;
+}
+@media(min-width:650px) {
+
+  #box-tools #box-slide .carousel-item:nth-of-type(3) {
+    background-size:contain!important;
+  }
+  #box-tools #box-slide .carousel-item:nth-of-type(7) {
+    background-size:92% 100%!important
+  }
+  
+}
+@media(max-width:650px) {
+  #box-tools #box-slide .carousel-item {
+    background-size:contain!important;
+  }
+}
+
+#box-tools #box-slide  .carousel-caption {
+  left:0%;
+  right:auto;
+  bottom: -80px;
+  width:100%;
+}
+#box-tools #box-slide .carousel-item p{
+  background-color: #fff;
+  color: #333;
+  margin:0 !important;
+  padding:10px 5px;
+  border-bottom: 1px solid #ddd;
+  opacity:0;
+  color:#c1bbbb;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  text-align:right;
+}
+#box-tools #box-slide .carousel-item.active p {
+  opacity:1;
+}
+.carousel-control-next {
+  right:auto;
+  top: 30%;
+  left:0;
+}
+
+.carousel-control-prev {
+  right:0;
+  left:auto;
+  top: 30%;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-image:none!important;
+  color: #94bd28;
+  font-size: 40px;
+}
+.carousel-control-prev {
+  bottom: 29px;
+}
+@media(max-width:991px) {
+  #box-tools header.head-sec {
+    margin-bottom:0;
+  }
+  #box-tools #box-slide {
+    width:100%;
+  }
+  #box-tools #box-slide .carousel-caption {
+    width:100%;
+    left:0;
+  }
+  .carousel-control-next, 
+  .carousel-control-prev {
+    height:100%;
+    width:100px;
+  }
+  #box-tools #box-slide .carousel-item p {
+    font-size:20px
+  }
+}
+@media(max-width:600px) {
+  #box-tools #box-slide .carousel-item p  {
+    font-size:15px
+  }
+}
+
+                    /****************************************************************************
+                    *********************************Start Box  *******************************
+                    *****************************************************************************/
+
+                    #Arc-box-tools  {
+                      margin-top:100px;
+                    }
+                    #Arc-box-tools #arc-box-slide {
+                      width:60%;
+                      position:static;
+                    
+                    }
+                    
+                    #Arc-box-tools #arc-box-slide  .carousel-indicators  {
+                      width:40%;
+                      left:0;
+                      right:auto;
+                      margin:0!important;
+                      flex-wrap:wrap;
+                     justify-content: flex-start;
+                     height:460px
+                    }
+                    #Arc-box-tools #arc-box-slide  .carousel-indicators  li {
+                      width:30%;
+                      height:103px;
+                      background-clip:unset;
+                      padding:0!important;
+                      border:1px solid #ddd;
+                      margin-bottom:10px;
+                      position:relative;
+                    }
+                    #Arc-box-tools #arc-box-slide  .carousel-indicators  li.move {
+                      left:-20px
+                    }
+                    .carousel-inner {
+                      height:460px;
+                    }
+                    #Arc-box-tools #arc-box-slide .carousel-item {
+                      position:relative;
+                      height:390px;
+                      background-size:cover!important;
+                    }
+                    @media(min-width:650px) {
+                    
+                      #Arc-box-tools #arc-box-slide .carousel-item:nth-of-type(3) {
+                        background-size:contain!important;
+                      }
+                      #Arc-box-tools #arc-box-slide .carousel-item:nth-of-type(7) {
+                        background-size:92% 100%!important
+                      }
+                      
+                    }
+                    @media(max-width:650px) {
+                      #Arc-box-tools #arc-box-slide .carousel-item {
+                        background-size:contain!important;
+                      }
+                    }
+                    
+                    #Arc-box-tools #arc-box-slide  .carousel-caption {
+                      left:0%;
+                      right:auto;
+                      bottom: -80px;
+                      width:100%;
+                    }
+                    #Arc-box-tools #arc-box-slide .carousel-item p{
+                      background-color: #fff;
+                      color: #333;
+                      margin:0 !important;
+                      padding:10px 5px;
+                      border-bottom: 1px solid #ddd;
+                      opacity:0;
+                      color:#c1bbbb;
+                      -webkit-transition: all 0.5s ease;
+                      -moz-transition: all 0.5s ease;
+                      transition: all 0.5s ease;
+                      text-align:right;
+                    }
+                    #Arc-box-tools #arc-box-slide .carousel-item.active p {
+                      opacity:1;
+                    }
+                    .carousel-control-next {
+                      right:auto;
+                      left:0;
+                      top: 30%;
+                      
+                    }
+                    
+                    .carousel-control-prev {
+                      right:0;
+                      left:auto;
+                      top: 30%;
+                    }
+                    
+                    .arc-carousel-control-next-icon, .arc-carousel-control-prev-icon {
+                      background-image:none!important;
+                      color: #0C4CA2;
+                      font-size: 40px;
+                    }
+                    .carousel-control-prev {
+                      bottom: 29px;
+                    }
+                    @media(max-width:991px) {
+                      #Arc-box-tools header.head-sec {
+                        margin-bottom:0;
+                      }
+                      #Arc-box-tools #arc-box-slide {
+                        width:100%;
+                      }
+                      #Arc-box-tools #arc-box-slide .carousel-caption {
+                        width:100%;
+                        left:0;
+                      }
+                      .carousel-control-next, 
+                      .carousel-control-prev {
+                        height:100%;
+                        width:100px;
+                      }
+                      #Arc-box-tools #arc-box-slide .carousel-item p {
+                        font-size:20px
+                      }
+                    }
+                    @media(max-width:600px) {
+                      #Arc-box-tools #arc-box-slide .carousel-item p  {
+                        font-size:15px
+                      }
+                    }
+                    
+                           /****************************************************************************
+                            *********************************Start Art Download app  *******************************
+                            *****************************************************************************/
+
+
+
+#download-app {
+  height:700px;
+}
+#download-app .head-sec {
+  margin-bottom:20px;
+}
+#get-course,
+#download-app {
+  background-color:#92b92a;
+  padding:30px 0px 45px;
+}
+#get-course .btn-sec ,
+#download-app  .btn-sec {
+  margin:0;
+  margin-top:200px;
+}
+#download-app .btn-sec p.f-d {
+  color:#928d8d;
+}
+#get-course .get-course-w-wrapper,
+#download-app  .download-app-w-wrapper {
+  padding-top:100px;
+}
+#download-app   .app-disc img{
+  width:100px
+}
+#download-app  .head-sec p{
+  color:#928d8d
+}
+
+#get-course .app-disc .media-body,
+#download-app .app-disc .media-body {
+  line-height:2.3rem;
+  font-weight:bold;
+  font-size:22px;
+
+}
+#download-app .left-img ,
+#get-course .left-img,
+#download-app .right-img {
+  width:420px;
+  height:420px;
+  background:url("../images/banner-full-w/phone-app.jpeg") no-repeat center / cover;
+  left:0;
+  top:0;
+  border-radius:50%;
+}
+#download-app .left-img,
+#download-app .right-img {
+  width:350px;
+  height:350px;
+}
+#download-app .left-img {
+  position:relative;
+  right:100px;
+}
+#download-app .right-img {
+  position: relative;
+  right:100px;
+  left:auto;
+  background:url("../images/banner-full-w/get-course.jpg") no-repeat center / cover;
+}
+#download-app  .d-head {
+  background-color:#fff;
+  border:1px solid var(--color);
+  display:inline-block;
+  padding:15px 20px;
+  border-radius:20px;
+  font-weight:bold;
+  margin-top:40px;
+  text-decoration: none;
+  color:#333;
+  font-size:20px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#download-app  .d-head:hover {
+  background-color:var(--color);
+  color:#fff;
+}
+#download-app  .d-head + p {
+  color:#777;
+  font-size:17px;
+  font-weight:bold;
+}
+#download-app  .d-head + p + a img {
+  width:150px;
+}#download-app  .d-head + p + a img.windows {
+  width:50px;
+}
+
+
+#get-course .left-img  {
+  background:url("../images/banner-full-w/person-3.jfif") no-repeat center / cover;
+}
+#get-course {
+  background-color:#333;
+  color:#fff;
+ 
+}
+#get-course .btn-sec  a.btn  {
+  width:auto;
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
+}
+
+@media(max-width:991px) {
+  #download-app  {
+    height:auto;
+  }
+  .btn-sec {
+    margin-top:25px;
+  }
+  #download-app .left-img,
+  #download-app .right-img  {
+    right:auto;
+    margin:0 auto;
+  }
+  #get-course .left-img {
+    position:static!important;
+      margin:70px auto;
+  }
+  #get-course .btn-sec, #download-app .btn-sec {
+    margin:0;
+  }
+}
+@media(max-width:767px) {
+  #download-app .media {
+    display:block;
+    text-align:center
+  }
+}
+@media(max-width:600px) {
+  #download-app .left-img,
+  #download-app .right-img,
+  #get-course .left-img {
+    width:300px;
+    height:300px;
+  }
+}
+
+                           /****************************************************************************
+                            *********************************Start Arc Download app  *******************************
+                            *****************************************************************************/
+
+
+
+                            #arc-download-app {
+                              height:700px;
+                            }
+                            #arc-download-app .head-sec {
+                              margin-bottom:20px;
+                            }
+                            
+                            #arc-download-app {
+                              background-color:#0C4CA2;
+                              padding:30px 0px 45px;
+                            }
+                            
+                            #arc-download-app  .btn-sec {
+                              margin:0;
+                              margin-top:200px;
+                            }
+                            #arc-download-app .btn-sec p.f-d {
+                              color:#928d8d;
+                            }
+                            
+                            #arc-download-app  .download-app-w-wrapper {
+                              padding-top:100px;
+                            }
+                            #arc-download-app   .app-disc img{
+                              width:100px
+                            }
+                            #arc-download-app  .head-sec p{
+                              color:#928d8d
+                            }
+                            
+                            
+                            #arc-download-app .app-disc .media-body {
+                              line-height:2.3rem;
+                              font-weight:bold;
+                              font-size:22px;
+                            
+                            }
+                            #arc-download-app .left-img ,
+                            
+                            #arc-download-app .right-img {
+                              width:420px;
+                              height:420px;
+                              background:url("../images/banner-full-w/ArcAndroid.jpeg") no-repeat center / cover;
+                              left:0;
+                              top:0;
+                              border-radius:50%;
+                            }
+                            #arc-download-app .left-img,
+                            #arc-download-app .right-img {
+                              width:350px;
+                              height:350px;
+                            }
+                            #arc-download-app .left-img {
+                              position:relative;
+                              right:100px;
+                            }
+                            #arc-download-app .right-img {
+                              position: relative;
+                              right:100px;
+                              left:auto;
+                              background:url("../images/banner-full-w/ArcPc.jpeg") no-repeat center / cover;
+                            }
+                            #arc-download-app  .d-head {
+                              background-color:#fff;
+                              border:1px solid var(--color);
+                              display:inline-block;
+                              padding:15px 20px;
+                              border-radius:20px;
+                              font-weight:bold;
+                              margin-top:40px;
+                              text-decoration: none;
+                              color:#333;
+                              font-size:20px;
+                              -webkit-transition: all 0.3s ease;
+                              -moz-transition: all 0.3s ease;
+                              transition: all 0.3s ease;
+                            }
+                            #arc-download-app  .d-head:hover {
+                              background-color:var(--color);
+                              color:#fff;
+                            }
+                            #arc-download-app  .d-head + p {
+                              color:#777;
+                              font-size:17px;
+                              font-weight:bold;
+                            }
+                            #arc-download-app  .d-head + p + a img {
+                              width:150px;
+                            }#arc-download-app  .d-head + p + a img.windows {
+                              width:50px;
+                            }
+                            
+                            @media(max-width:991px) {
+                              #arc-download-app  {
+                                height:auto;
+                              }
+                              .btn-sec {
+                                margin-top:25px;
+                              }
+                              #arc-download-app .left-img,
+                              #arc-download-app .right-img  {
+                                right:auto;
+                                margin:0 auto;
+                              }
+                             
+                             
+                            }
+                            @media(max-width:767px) {
+                              #arc-download-app .media {
+                                display:block;
+                                text-align:center
+                              }
+                            }
+                            @media(max-width:600px) {
+                              #arc-download-app .left-img,
+                              #arc-download-app .right-img,
+                            } 
+                           /****************************************************************************
+                            *********************************Start Footer  *******************************
+                            *****************************************************************************/
+
+
+
+footer {
+  background-color:#191919;
+
+  color:#fff;
+}
+footer  p {
+  font-size:15px
+}
+footer   h3 {
+  font-size:22px;
+}
+footer .contact-us li:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+footer .contact-us svg {
+  color:var(--color);
+}
+footer .follow-us li a{
+  width:45px;
+  height:45px;
+  line-height:45px;
+  background-color:#3e5790;
+  color:#fff;
+  font-size:25px;
+  -webkit-transition:all 0.3s ease;
+  -moz-transition:all 0.3s ease;
+  transition:all 0.3s ease;
+}
+footer .follow-us li a svg {
+    vertical-align:middle
+}
+footer .follow-us li a:hover {
+  border-radius:0!important;
+}
+
+footer .follow-us li:nth-of-type(2) a {
+  background-color:crimson;
+}
+
+footer .follow-us li:last-of-type a {
+  background-color:#92b92a;
+}
+footer .copyright {
+  background-color:#222;
+  color:#777;
+  font-size:14px
+}
+@media(max-width:991px) {
+  footer p{
+      font-size:20px;
+      margin:0;
+  }
+}
